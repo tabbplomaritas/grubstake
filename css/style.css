@@ -31,12 +31,17 @@ html {
 
 @font-face {
   font-family: 'avenir';
-  src: url('../assets/Avenir.ttc'); 
+  src: url('../assets/fonts/Avenir.ttc'); 
+}
+
+@font-face {
+  font-family: 'avenirBlack';
+  src: url('../assets/fonts/Avenir.ttc'); 
 }
 
 @font-face {
   font-family: 'regina';
-  src: url('../assets/ReginaBlack-Solid.ttf');
+  src: url('../assets/fonts/ReginaBlack-Solid.ttf');
 }
 
 body {
@@ -60,7 +65,7 @@ body {
 }
 
 a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
     letter-spacing: 2px;
     font-weight: 100;
@@ -88,6 +93,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 2.5rem;
+    z-index: 2;
 }
 
 #logo {
@@ -121,11 +127,11 @@ nav {
 
 
 section {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    padding-top: 10rem;
 }
 
 h2 {
@@ -147,18 +153,35 @@ h2::after {
 }
 
 h3 {
+    font-size: 2.5rem;
+    color: #4cbc8c;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'regina';
+    font-weight: bold;
+    
+}
+
+h4 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 3px;
+
+  
+}
+
+
+
+p {
+    margin: 2rem auto;
 }
 
 .animation {
-    width: 75%;
+    width: 82%;
     align-self: flex-end;
-        margin-right: 1rem;
-    margin-bottom: 5.5rem;
-  
+    margin-right: 7rem;
+    margin-bottom: 10rem;
 }
 
 .animation_mobile {
@@ -166,17 +189,52 @@ h3 {
 }
 
 .intro {
-    padding-top: 5rem;
     background-color:  #4cbc8c;
     color: #21704f;
-
+    position: relative;
 }
 
 .intro_btns {
     width: 65%;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 
+.more.linkB {
+    align-self: center;
+    position: absolute;
+    bottom: 2rem;
+}
+
+/* about section styles */
+
+.about {
+    text-align: center;
+    height: 100vh;
+}
+
+.about p {
+    line-height: 2.7rem;
+}
+
+.about > p {
+    width: 58rem;
+}
+
+.about .row {
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 75%;
+}
+
+.about_col {
+    width: 20%;
+}
+
+.about img {
+    width: 75%;
+}
 
 
 
