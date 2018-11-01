@@ -136,7 +136,7 @@ section {
 
 h2 {
     font-family: bebas-neue-v14-deprecated,sans-serif;
-    font-size: 7.9rem;
+    font-size: 9rem;
     letter-spacing: 3px;
     position: relative;
     padding-bottom: 1.5rem;
@@ -185,13 +185,18 @@ p {
 }
 
 .intro {
-    background-color:  #4cbc8c;
+    background-color:  #ed9a99;
     color: #21704f;
     position: relative;
 }
 
+.intro p {
+    margin: 1rem 0 2rem 0;
+    max-width: 38rem;
+}
+
 .intro_btns {
-    width: 65%;
+    width: 40rem;
     justify-content: space-between;
     margin-top: 2rem;
 }
