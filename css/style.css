@@ -66,23 +66,16 @@ body {
 
 a {
     font-size: 2rem;
-    font-family: 'bebas-neue-v14-deprecated',sans-serif;
+    font-family: bebas-neue-by-fontfabric,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: light;
     color: white;
     position: relative;
     padding-bottom: 5px;
 }
 
-a::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    padding-bottom: 2px;
-    border-bottom: 2px solid white;
-}
 
 header {
     height: 9rem;
@@ -114,16 +107,13 @@ nav {
 
 .linkA {
     color: white;
+    border-bottom: 2px solid white;
 }
 
 .linkB {
     color:    #fece8a;
-}
-
-.linkB::after {
     border-bottom: 2px solid #fece8a;
 }
-
 
 
 section {
@@ -131,12 +121,15 @@ section {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+
+section > h3 {
     padding-top: 10rem;
 }
 
 h2 {
     font-family: bebas-neue-v14-deprecated,sans-serif;
-    font-size: 7.9rem;
+    font-size: 10rem;
     letter-spacing: 3px;
     position: relative;
     padding-bottom: 1.5rem;
@@ -166,7 +159,17 @@ h4 {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 3px;
-    font-family: 'avenir';
+    font-family: 'avenir black';
+}
+
+h5 {
+    color: #DA9997;
+    font-size: 1.3rem;
+    font-family: 'avenir black', sans-serif;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
 p {
@@ -190,8 +193,14 @@ p {
     position: relative;
 }
 
+.intro p, .workshops p {
+    margin: 1rem 0 2rem 0;
+    max-width: 38rem;
+    font-size: 1.5rem;
+}
+
 .intro_btns {
-    width: 65%;
+    width: 35rem;
     justify-content: space-between;
     margin-top: 2rem;
 }
@@ -205,7 +214,7 @@ p {
 
 /* about section styles */
 
-.about {
+.about, .workshops {
     text-align: center;
     padding-bottom: 10rem;
 }
@@ -214,11 +223,17 @@ p {
     line-height: 2.7rem;
 }
 
-.about > p {
+.about > p, .workshops > p {
     width: 48rem;
+    margin: 5rem auto;
 }
 
-.about .row {
+.about a {
+    color: #4cbc8c;
+    border-bottom: 2px solid #4cbc8c;
+}
+
+.about .row, .workshops .row {
     margin: 0 auto;
     justify-content: center;
     flex-wrap: nowrap;
@@ -226,12 +241,37 @@ p {
 }
 
 .about_col {
-    width: 20%;
+    padding: 0 3rem;
 }
 
 .about img {
     width: 70%;
 }
 
+.workshops {
+    background-color: #4cbc8c;
+}
 
+.workshops h3 {
+    color: white;
+}
 
+.workshops h4 {
+    color: #21704f;
+}
+
+.eventRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: left;
+}
+
+.eventRow a {
+    color: #21704f;
+}
