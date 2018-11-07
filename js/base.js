@@ -35,9 +35,9 @@ $(function() {
     for(let i=0; i < events.length; i++) {
         let eventRow = `
         <div class="eventRow"> 
-            <p>${events[i].date}</p>
+            <p class="date">${events[i].date}</p>
             <p>${events[i].venue}</p>
-            <p>${events[i].location}</p>
+            <p class="location">${events[i].location}</p>
             <a href="#">Info</a>
             <a href=${events[i].url}>Register now</a>
 

@@ -159,7 +159,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 3px;
-    font-family: 'avenir black';
+    font-family: 'avenir black', sans-serif;
 }
 
 h5 {
@@ -193,7 +193,7 @@ p {
     position: relative;
 }
 
-.intro p, .workshops p {
+.intro p, .workshops > p {
     margin: 1rem 0 2rem 0;
     max-width: 38rem;
     font-size: 1.5rem;
@@ -248,6 +248,8 @@ p {
     width: 70%;
 }
 
+/* workshops section */
+
 .workshops {
     background-color: #4cbc8c;
 }
@@ -264,14 +266,43 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: baseline;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: .5rem 2rem;
     text-align: left;
+    width: 100%;
+    max-width: 90rem;
+    letter-spacing: 2px;
+}
+
+.date {
+    color: #A44142;
+    font-family: 'regina', serif;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.location {
+    color: #A44142;
+    font-family: 'avenir black', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .eventRow a {
-    color: #21704f;
+    font-family: bebas-neue-v14-deprecated,sans-serif;
+}
+
+.eventRow a:nth-of-type(1) {
+    color: #4cbc8c;
+    border-bottom: 2px solid #4cbc8c;
+    margin-right: 2rem;
+}
+
+.eventRow a:nth-of-type(2) {
+    color: #A44142;
+    border-bottom: 2px solid #A44142;
+    
 }
