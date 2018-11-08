@@ -35,13 +35,13 @@ $(function() {
     for(let i=0; i < events.length; i++) {
         let eventRow = `
         <div class="eventRow"> 
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="row dateVenueWrapper">
                     <p class="date">${events[i].date}</p>
                     <p class="venue">${events[i].venue}</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
                     <div>
