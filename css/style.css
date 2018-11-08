@@ -273,8 +273,36 @@ p {
     padding: .5rem 2rem;
     text-align: left;
     width: 100%;
-    max-width: 90rem;
+    /* max-width: 100rem; */
     letter-spacing: 2px;
+}
+
+.eventRow .row {
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.eventRow p {
+     margin: 2rem 1rem;
+}
+
+.eventRow .dateVenueWrapper, .eventRow .locationLinksWrapper {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.eventRow .dateVenueWrapper {
+    justify-content: flex-start;
+}
+
+.eventRow .locationLinksWrapper {
+    justify-content: space-between;
 }
 
 .date {
@@ -282,14 +310,23 @@ p {
     font-family: 'regina', serif;
     letter-spacing: 1px;
     margin: 0;
+    text-transform: uppercase;
 }
 
-.location {
+.venue {
+    text-align: left;
+}
+
+.eventRow .location {
     color: #A44142;
     font-family: 'avenir black', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
+    width: auto;
 }
+
+
 
 .eventRow a {
     font-family: bebas-neue-v14-deprecated,sans-serif;

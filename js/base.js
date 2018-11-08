@@ -10,9 +10,9 @@ const events = [
         url: '#'
     },
      {
-        date: 'NOV. 30, 2019',
-        venue: 'Traverse City Chamber of Commerce',
-        location: 'Traverse City, MI', 
+        date: 'Jan. 16, 2019',
+        venue: 'Adrian City Hall',
+        location: 'Adrian, MI', 
         url: '#'
     },
      {
@@ -35,14 +35,22 @@ $(function() {
     for(let i=0; i < events.length; i++) {
         let eventRow = `
         <div class="eventRow"> 
-            <p class="date">${events[i].date}</p>
-            <p>${events[i].venue}</p>
-            <p class="location">${events[i].location}</p>
-            <a href="#">Info</a>
-            <a href=${events[i].url}>Register now</a>
-
-            
-            </div`;
+            <div class="col-md-6">
+                <div class="row dateVenueWrapper">
+                    <p class="date">${events[i].date}</p>
+                    <p class="venue">${events[i].venue}</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row locationLinksWrapper">
+                    <p class="location">${events[i].location}</p>
+                    <div>
+                        <a href="#">Info</a>
+                        <a href=${events[i].url}>Register now</a>
+                    </div>
+                </div>
+            </div>
+        </div`;
 
 
          $(".workshopEvents").append(eventRow);
