@@ -2,88 +2,115 @@
 
 $(document).ready(() => {
 
-const events = [
-    {
-        date: 'NOV. 30, 2019',
-        venue: 'Traverse City Chamber of Commerce',
-        location: 'Traverse City, MI', 
-        url: '#'
-    },
-     {
-        date: 'Jan. 16, 2019',
-        venue: 'Adrian City Hall',
-        location: 'Adrian, MI', 
-        url: '#'
-    },
-     {
-        date: 'NOV. 30, 2019',
-        venue: 'Traverse City Chamber of Commerce',
-        location: 'Traverse City, MI', 
-        url: '#'
-    },
-     {
-        date: 'NOV. 30, 2019',
-        venue: 'Traverse City Chamber of Commerce',
-        location: 'Traverse City, MI', 
-        url: '#'
+    const events = [
+        {
+            date: 'NOV. 30, 2019',
+            venue: 'Traverse City Chamber of Commerce',
+            location: 'Traverse City, MI', 
+            url: '#'
+        },
+        {
+            date: 'Jan. 16, 2019',
+            venue: 'Adrian City Hall',
+            location: 'Adrian, MI', 
+            url: '#'
+        },
+        {
+            date: 'NOV. 30, 2019',
+            venue: 'Traverse City Chamber of Commerce',
+            location: 'Traverse City, MI', 
+            url: '#'
+        },
+        {
+            date: 'NOV. 30, 2019',
+            venue: 'Traverse City Chamber of Commerce',
+            location: 'Traverse City, MI', 
+            url: '#'
+        }
+    ]
+
+    //randomly choose which landing page screen user will see
+    let randomNum = Math.floor(Math.random() * 5) + 1  
+
+    //declare elements to be chagned
+    const $intro = $(".intro");
+    const $logo = $("#logo");
+    const $linkA = $('.linkA');
+    const $linkB = $('.linkB');
+    const $text = $('.intro .col');
+    const $img = $('.intro img');
+    const $heading = $('.intro h2');
+
+    //establish 
+    let backgroundColor;
+    let logoColor;
+    let color1;
+    let color2;
+    let textColor;
+    let imageSrc;
+    let headingText;
+
+    switch (randomNum) {
+    case 1:
+        backgroundColor = '#4CBC8C';
+        logoColor = '#FECE8A';
+        color1  = '#FFFFFF';
+        textColor = '#21704F';
+        imageSrc = 'Triangle.gif';
+        headingText = "it's not weird";
+        break;
+
+    case 2:
+        backgroundColor = '#ED9A99';
+        logoColor = '#FFFFFF';
+        color1  = '#444545';
+        textColor = '#444545';
+        imageSrc = 'Unicorn.gif';
+        headingText = "it's not a unicorn";
+        break
+
+    case 3:
+        backgroundColor = '#434343';
+        logoColor = '#4CBC8C';
+        color1  = '#ffffff';
+        textColor = '#ED9A99';
+        imageSrc = 'zombie.gif';
+        headingText = "it's not scary";
+        break
+    
+    case 4:
+        backgroundColor = '#6597BA';
+        logoColor = '#BD3F40';
+        color1  = '#ffffff';
+        textColor = '#155375';
+        imageSrc = 'bag.gif';
+        headingText = "it's not rude";
+        break
+    
+    case 5:
+        backgroundColor = '#FECE8A';
+        logoColor = '#155375';
+        color1  = '#ffffff';
+        textColor = '#BD3F40';
+        imageSrc = 'Tube.gif';
+        headingText = "it's not confusing";
+        break   
+
     }
-]
-
-//randomly choose which landing page screen user will see
-let randomNum = Math.floor(Math.random() * 5) + 1  
-
-//establish variables for elements to be chagned
-const $intro = $(".intro");
-const $logo = $(".logo");
-const $linkA = $('nav > .linkA');
-const $linkB = $('nav > .linkB');
-const $text = $('.intro .col');
-
-let backgroundColor;
-let logoColor;
-let color1;
-let color2;
-let textColor;
-let imageSrc;
-
-switch (randomNum) {
-  case 1:
-    //set values for intro section 1
-    console.log(`selected: ${randomNum}`);
-
-    backgroundColor = '#4CBC8C';
-    logoColor = '#FECE8A';
-    color1  = '#FFFFFF';
-    textColor = '#21704F';
-    imageSrc = 'Triangle.gif';
-    
-    break;
-  case 2:
-    backgroundColor = '#434343';
-    console.log(`selected: ${randomNum}`);
-
-    break
-  case 3:
-    backgroundColor = 'blue';
-    console.log(`selected: ${randomNum}`);
-    
-    break
-  default:
-    console.log('default selected');
-}
 
     function setIntroDipslay(){
-
         $intro.css(`background-color`, `${backgroundColor}`);
         $logo.css('color', `${logoColor}`);
-
+        $linkA.css({'color': `${color1}`, 'border-bottom': `2px solid ${color1}`});
+        $linkB.css({'color': `${logoColor}`, 'border-bottom': `2px solid ${logoColor}`});
+        $text.css('color', `${textColor}`);
+        $heading.css('border-bottom', `.75rem solid ${textColor}`);
+        $heading.text(`${headingText}`);
+        $img.attr('src', `./../assets/animations/${imageSrc}`);
     }
 
     setIntroDipslay();
   
-
-
-
 
 //generate events table
 $(function() {
@@ -118,28 +145,28 @@ $(window).bind("scroll", function() {
     const $about = $('.about').offset().top -40;
     const $workshops = $('.workshops').offset().top - 40;
     const $logo = $('#logo');
-    const $linkA = $('nav > .linkA');
-    const $linkB = $('nav > .linkB');
+    const $navLinkA = $('nav > .linkA');
+    const $navLinkB = $('nav > .linkB');
     let $colorPrimary;
     let $colorSecondary;
     let $colorTertiary;
     
 
    if ($(this).scrollTop() < $about){ 
-        $logo.css("color", "#fece8a");
-        $linkA.css({"color": "white", "border-bottom": "2px solid white"});
-        $linkB.css({"color": "#fece8a", "border-bottom": "2px solid #fece8a"});
+        $logo.css("color", `${logoColor}`);
+        $navLinkA.css({"color": `${color1}`, "border-bottom": `2px solid ${color1}`});
+        $navLinkB.css({"color": `${logoColor}`, "border-bottom": `2px solid ${logoColor}`});
        
    } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
         $logo.css("color", "#a5a4a4")
-        $linkA.css({"color": "#4cbc8c", "border-bottom": "2px solid #4cbc8c"});
-        $linkB.css({"color": "#a5a4a4", "border-bottom": "2px solid #a5a4a4"});
+        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "2px solid #4cbc8c"});
+        $navLinkB.css({"color": "#a5a4a4", "border-bottom": "2px solid #a5a4a4"});
         // $('.about').css("padding-top", "15rem");
 
    } else if ($(this).scrollTop() > $workshops){
         $logo.css("color", "#21704f")
-        $linkA.css({"color": "white", "border-bottom": "2px solid white"});
-        $linkB.css({"color": "#21704f", "border-bottom": "2px solid #21704f"});
+        $navLinkA.css({"color": "white", "border-bottom": "2px solid white"});
+        $navLinkB.css({"color": "#21704f", "border-bottom": "2px solid #21704f"});
    }
 })
 
