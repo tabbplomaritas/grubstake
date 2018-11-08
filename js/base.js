@@ -29,6 +29,61 @@ const events = [
     }
 ]
 
+//randomly choose which landing page screen user will see
+let randomNum = Math.floor(Math.random() * 5) + 1  
+
+//establish variables for elements to be chagned
+const $intro = $(".intro");
+const $logo = $(".logo");
+const $linkA = $('nav > .linkA');
+const $linkB = $('nav > .linkB');
+const $text = $('.intro .col');
+
+let backgroundColor;
+let logoColor;
+let color1;
+let color2;
+let textColor;
+let imageSrc;
+
+switch (randomNum) {
+  case 1:
+    //set values for intro section 1
+    console.log(`selected: ${randomNum}`);
+
+    backgroundColor = '#4CBC8C';
+    logoColor = '#FECE8A';
+    color1  = '#FFFFFF';
+    textColor = '#21704F';
+    imageSrc = 'Triangle.gif';
+    
+    break;
+  case 2:
+    backgroundColor = '#434343';
+    console.log(`selected: ${randomNum}`);
+
+    break
+  case 3:
+    backgroundColor = 'blue';
+    console.log(`selected: ${randomNum}`);
+    
+    break
+  default:
+    console.log('default selected');
+}
+
+    function setIntroDipslay(){
+
+        $intro.css(`background-color`, `${backgroundColor}`);
+        $logo.css('color', `${logoColor}`);
+
+    }
+
+    setIntroDipslay();
+  
+
+
+
 
 //generate events table
 $(function() {
@@ -59,7 +114,7 @@ $(function() {
 
 
 $(window).bind("scroll", function() { 
-    const $intro = $('.intro').offset().top -40;
+    // const $intro = $('.intro').offset().top -40;
     const $about = $('.about').offset().top -40;
     const $workshops = $('.workshops').offset().top - 40;
     const $logo = $('#logo');
@@ -82,11 +137,9 @@ $(window).bind("scroll", function() {
         // $('.about').css("padding-top", "15rem");
 
    } else if ($(this).scrollTop() > $workshops){
-       console.log('WORKSHOP');
         $logo.css("color", "#21704f")
         $linkA.css({"color": "white", "border-bottom": "2px solid white"});
         $linkB.css({"color": "#21704f", "border-bottom": "2px solid #21704f"});
-
    }
 })
 
