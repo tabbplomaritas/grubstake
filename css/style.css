@@ -80,6 +80,7 @@ a {
 header {
     height: 9rem;
     position: fixed;
+    right: 0;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -87,6 +88,8 @@ header {
     width: 100%;
     padding: 2.5rem;
     z-index: 2;
+    /* max-width: 120rem; */
+    margin: 0 auto;
 }
 
 #logo {
@@ -95,9 +98,6 @@ header {
     font-family: 'regina';
 }
 
-#logo:after {
-    border: none;
-}
 
 nav {
     width: 18rem;
@@ -148,12 +148,11 @@ h2 {
 } */
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #4cbc8c;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-family: 'regina', serif;
-    font-weight: bold;
 }
 
 h4 {
@@ -169,7 +168,7 @@ h5 {
     font-size: 1.3rem;
     font-family: 'avenir black', sans-serif;
     text-transform: uppercase;
-    margin: 2rem auto;
+    margin: 1.2rem auto;
     font-weight: 900;
     letter-spacing: 3px;
 }
@@ -178,15 +177,17 @@ p {
     margin: 2rem auto;
 }
 
-.animation {
+.animation_desktop {
     width: 75%;
     align-self: flex-end;
     margin-right: 7rem;
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
 }
 
 .animation_mobile {
     display: none;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .intro {
@@ -195,6 +196,10 @@ p {
     position: relative;
     padding-top: 10rem;
     min-height: 100vh;
+}
+
+.intro .row {
+    flex-wrap: nowrap;
 }
 
 .intro p {
@@ -246,8 +251,19 @@ p {
     width: 90%;
 }
 
+.about .row {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .about_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 3rem;
+    flex: 1;
+    width: 90%;
 }
 
 .about img {
@@ -281,7 +297,7 @@ p {
     text-align: left;
     width: 100%;
     max-width: 100rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .eventRow .row {
@@ -321,13 +337,14 @@ p {
     margin: 2rem 2rem 2rem 3rem;
 }
 
-.eventRow .location {
+.location {
     color: #A44142;
     font-family: 'avenir black', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
     width: auto;
+    letter-spacing: 2px;
 }
 
 .eventRow a {
@@ -389,6 +406,7 @@ footer i {
 
 /* media queries */
 
+/* tablet */
 @media (max-width: 992px) { 
     
   .eventRow {
@@ -422,4 +440,41 @@ footer i {
         align-self: flex-start;
     }
 
+       .about_col h3 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+
+    .about_col h5 {
+        font-size: 1rem;
+    }
+
+    .about a {
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+    }
+
+}
+
+@media (max-width: 768px) { 
+    header {
+        padding: 1rem;
+        height: 6rem;
+    }
+
+    nav {
+        width: 10rem;
+    }
+
+    #logo {
+        font-size: 3rem;
+    }
+
+    .animation_desktop {
+        display: none;
+    }
+
+    .animation_mobile {
+        display: block;
+    }
 }

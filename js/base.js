@@ -16,15 +16,27 @@ $(document).ready(() => {
             url: '#'
         },
         {
-            date: 'NOV. 30, 2019',
-            venue: 'Traverse City Chamber of Commerce',
-            location: 'Traverse City, MI', 
+            date: 'Feb. 22, 2019',
+            venue: 'Ypsilanti Public Library',
+            location: 'Ypsilanti, MI', 
             url: '#'
         },
         {
-            date: 'NOV. 30, 2019',
-            venue: 'Traverse City Chamber of Commerce',
-            location: 'Traverse City, MI', 
+            date: 'Mar. 30, 2019',
+            venue: 'WeWork',
+            location: 'Detroit, MI', 
+            url: '#'
+        },
+        {
+            date: 'Apr. 19, 2019',
+            venue: 'Lansing City Market',
+            location: 'Lansing, MI', 
+            url: '#'
+        },
+         {
+            date: 'May. 18, 2019',
+            venue: 'Kent County Chamber of Commerce',
+            location: 'Grand Rapids, MI', 
             url: '#'
         }
     ]
@@ -35,8 +47,8 @@ $(document).ready(() => {
     //declare elements to be chagned
     const $intro = $(".intro");
     const $logo = $("#logo");
-    const $linkA = $('.linkA');
-    const $linkB = $('.linkB');
+    const $linkA = $('.intro .linkA');
+    const $linkB = $('.intro .linkB');
     const $text = $('.intro .col');
     const $img = $('.intro img');
     const $heading = $('.intro h2');
