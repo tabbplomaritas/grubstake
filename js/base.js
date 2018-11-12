@@ -118,7 +118,7 @@ $(document).ready(() => {
         $text.css('color', `${textColor}`);
         $heading.css('border-bottom', `.75rem solid ${textColor}`);
         $heading.text(`${headingText}`);
-        $img.attr('src', `./../assets/animations/${imageSrc}`);
+        $img.attr('src', `./assets/animations/${imageSrc}`);
     }
 
     setIntroDipslay();
