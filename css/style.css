@@ -62,6 +62,7 @@ a {
     letter-spacing: 2px;
     color: white;
     padding-bottom: 5px;
+    transform: .3s all;
 }
 
 .row {
@@ -353,6 +354,7 @@ section:not(:first-of-type) {
 .logos a img{
     width: auto;
     max-height: 9.6rem;
+    transition: .3s all;
 }
 
 /* footer */
@@ -478,13 +480,14 @@ footer i {
 @media (max-width: 767px) { 
 
     section:not(:first-of-type) > p:first-of-type {
-        padding: 0 2rem;
+        padding: 0 2.5rem;
         margin: 3rem auto;
     }
 
-    section {
+    /* TODO: do we need to reduce section padding on mobile?  */
+    /* section {
         padding: 9.5rem 0;
-    }
+    } */
 
     header .linkA span:nth-child(1){
         display: none;
@@ -564,6 +567,11 @@ footer i {
 
     .footerLogo {
         font-size: 3rem;
+    }
+
+    .sponsors h3 {
+        padding: 0 2.5rem;
+        font-size: 2.4rem;
     }
 
     .logos {
