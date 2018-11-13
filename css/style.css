@@ -56,9 +56,16 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    font-size: 2rem;
+    font-family: 'bebas-neue-by-fontfabric',sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    padding-bottom: 5px;
+}
+
 .row {
     margin: 0;
-    /* width: 100%; */
 }
 
 .col {
@@ -67,14 +74,6 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 2.5rem;
-}
-
-a {
-    font-size: 2rem;
-    font-family: 'bebas-neue-by-fontfabric',sans-serif;
-    letter-spacing: 2px;
-    color: white;
-    padding-bottom: 5px;
 }
 
 
@@ -88,14 +87,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 2.5rem; */
     z-index: 2;
     margin: 0 auto;
-    /* box-sizing: border-box; */
 }
 
 header .linkA span:nth-child(2){
-    /* border: 2px solid red; */
     display: none;
 }
 
@@ -117,12 +113,6 @@ nav {
     border-bottom: 2px solid white;
 }
 
-.linkB {
-    /* color:#fece8a;
-    border-bottom: 2px solid #fece8a; */
-}
-
-
 section {
     display: flex;
     flex-direction: column;
@@ -131,9 +121,6 @@ section {
     padding: 12.5rem 0;
 }
 
-section > h3 {
-    /* padding-top: 10rem; */
-}
 
 h2 {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
@@ -144,15 +131,6 @@ h2 {
     margin-bottom: 5rem;
     border-bottom: .5rem solid #21704f;
 }
-
-/* h2::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    border-bottom: 1rem solid #21704f;
-} */
 
 h3 {
     font-size: 2.6rem;
@@ -186,11 +164,8 @@ p {
 
 .animation_desktop {
     width: 75%;
-    /* min-width: 36rem; */
     align-self: center;
     max-width: 41.5rem;
-    /* margin-right: 7rem; */
-    /* margin-bottom: 10rem; */
 }
 
 .animation_mobile {
@@ -206,7 +181,6 @@ p {
     background-color:  #4cbc8c;
     color: #21704f;
     position: relative;
-    padding-top: 10rem;
     min-height: 100vh;
 }
 
@@ -214,15 +188,14 @@ p {
     flex-wrap: wrap;
 }
 
-.intro p {
-    margin: 1rem 0 2rem 0;
-    max-width: 42rem;
+section:not(:first-of-type) > p:first-of-type {
+    max-width: 55rem;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 2.3rem;
+    margin: 5rem auto;
 }
 
 .intro_btns {
-    /* display: none; */
     width: 35rem;
     justify-content: space-between;
     margin-top: 2rem;
@@ -237,7 +210,7 @@ p {
 
 /* about section styles */
 
-.about, .workshops {
+section:not(:first-of-type) {
     text-align: center;
 }
 
@@ -246,8 +219,6 @@ p {
 }
 
 .about > p, .workshops > p {
-    width: 52rem;
-    margin: 5rem auto;
     font-size: 1.5rem;
 }
 
@@ -363,6 +334,27 @@ p {
     border-bottom: 2px solid #A44142;
 }
 
+/* sponsors */
+
+.sponsors h3 {
+    color: #ED9A99;
+}
+
+.logos {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.logos a {
+    padding: .5rem;
+}
+
+.logos a img{
+    width: auto;
+    max-height: 9.6rem;
+}
+
 /* footer */
 
 footer {
@@ -476,9 +468,23 @@ footer i {
         align-self: flex-start;
     }
 
+    .logos a img {
+        margin: 1rem;
+
+    }
+
 }
 
 @media (max-width: 767px) { 
+
+    section:not(:first-of-type) > p:first-of-type {
+        padding: 0 2rem;
+        margin: 3rem auto;
+    }
+
+    section {
+        padding: 9.5rem 0;
+    }
 
     header .linkA span:nth-child(1){
         display: none;
@@ -500,22 +506,10 @@ footer i {
         align-items: flex-start;
         top: 2.5rem;
     }
-    .workshops > p, .about > p {
-        width: auto;
+
+    /* .workshops > p, .about > p {
         padding: 2rem;
-    }
-
-    nav {
-        flex-direction: column;
-         justify-content: center;
-        /* width: 15rem; */
-        align-items: flex-end;
-        height: auto;
-    }
-
-    nav a:first-of-type {
-        margin-bottom: 1rem;
-    }
+    } */
 
     #logo {
         font-size: 3rem;
@@ -525,16 +519,15 @@ footer i {
 
     .intro_btns {
         width: 100%;
-        /* flex-direction: column; */
     }
 
     .intro .row a:nth-child(2) {
         margin-top: 1.5rem;
     }
 
-    .about > p, .workshops > p {
+    /* .about > p, .workshops > p {
         margin: 2rem auto;
-    }
+    } */
 
     .about_col {
         flex: auto;
@@ -571,6 +564,14 @@ footer i {
 
     .footerLogo {
         font-size: 3rem;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+    .logos a img {
+        margin: 2rem;
+        width: auto;
     }
 }
 
