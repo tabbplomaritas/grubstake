@@ -187,7 +187,8 @@ p {
 .animation_desktop {
     width: 75%;
     /* min-width: 36rem; */
-    align-self: flex-end;
+    align-self: center;
+    max-width: 41.5rem;
     /* margin-right: 7rem; */
     /* margin-bottom: 10rem; */
 }
@@ -353,24 +354,13 @@ p {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
-    width: auto;
     letter-spacing: 2px;
 }
 
 .eventRow a {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
-}
-
-.eventRow a:nth-of-type(1) {
-    color: #4cbc8c;
-    border-bottom: 2px solid #4cbc8c;
-    margin-right: 2rem;
-}
-
-.eventRow a:nth-of-type(2) {
     color: #A44142;
     border-bottom: 2px solid #A44142;
-    
 }
 
 /* footer */
@@ -393,7 +383,7 @@ footer {
     font-size: 4rem;
     color: #4cbc8c;
     font-family: 'regina';
-    margin-top: -8px;
+    /* margin-top: -8px; */
 }
 
 footer .content {
@@ -425,10 +415,14 @@ footer h3 {
     margin: .5rem 0 1.5rem 0;
 }
 
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+}
 
 footer i {
     color: #ED9A99;
-    margin-left: 2rem;
     font-size: 2.5rem;
 }
 
@@ -436,14 +430,26 @@ footer i {
 
 /* tablet */
 @media (max-width: 992px) { 
-    .intro {
-        /* padding-top: 0; */
+
+    /* about section queries */
+    .about_col h3 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
     }
 
+    .about_col h5 {
+        font-size: 1rem;
+    }
+
+    .about a {
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* workshop section queries */
     .eventRow {
         width: 85%;
         flex-direction: column;
-        /* align-content: space-around; */
         align-items: stretch;
         margin: 2rem auto;
         padding: 1.5rem;
@@ -458,33 +464,17 @@ footer i {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        }
+    }
 
-    .eventRow .locationLinksWrapper div {
+    .eventRow .locationLinksWrapper a {
         position: absolute;
         top: 1rem;
-        right: 2.5rem;
+        right: 1.5rem;
     }
 
     .eventRow .location {
-        /* margin-bottom: 2rem; */
         align-self: flex-start;
     }
-
-    .about_col h3 {
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    }
-
-    .about_col h5 {
-        font-size: 1rem;
-    }
-
-    .about a {
-        font-size: 1.7rem;
-        letter-spacing: 1.5px;
-    }
-
 
 }
 
@@ -564,42 +554,49 @@ footer i {
 
     .date {
         font-size: 1.2rem;
-        letter-spacing: .7px;
     }
 
     .venue {
         margin-top: 3rem;
     }
 
-    .eventRow .locationLinksWrapper div a {
-        letter-spacing: 1.5px;
-        font-size: 18px;
-    }
-
-    .eventRow a:nth-of-type(1) {
-        margin-right: 1.5rem;
-    }
-
     .socialLinks {
         margin: 3rem auto 0 auto;
+        width: 100%;
+    }
+
+    .content p:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .footerLogo {
+        font-size: 3rem;
     }
 }
 
     /* for the tiniest of mobile screens */
-    @media (max-width: 320px) {
-        .eventRow .locationLinksWrapper div {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-        
-        .eventRow .locationLinksWrapper div a {
-            margin: 0 0 .75rem 0;
-        }
-
-        .venue {
-            margin-top: 5rem;
-        }
-        
+@media (max-width: 320px) {
+    .eventRow .locationLinksWrapper div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
+    
+    .eventRow .locationLinksWrapper div a {
+        margin: 0 0 .75rem 0;
+    }
+
+    .venue {
+        margin-top: 5rem;
+    }
+
+    .footerHeader .linkA {
+        font-size: 1.6rem;
+    }
+
+    footer h3 {
+        font-size: 1.5rem;
+    }
+    
+}
    

@@ -138,10 +138,7 @@ $(function() {
             <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
-                    <div>
-                        <a href="#">Info</a>
                         <a href=${events[i].url}>Register now</a>
-                    </div>
                 </div>
             </div>
         </div`;
