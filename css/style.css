@@ -335,7 +335,7 @@ section:not(:first-of-type) {
     border-bottom: 2px solid #A44142;
 }
 
-/* sponsors */
+/* sponsors section */
 
 .sponsors h3 {
     color: #ED9A99;
@@ -351,7 +351,7 @@ section:not(:first-of-type) {
     padding: .5rem;
 }
 
-.logos a img{
+.logos a img {
     width: auto;
     max-height: 9.6rem;
     transition: .3s all;
@@ -377,7 +377,6 @@ footer {
     font-size: 4rem;
     color: #4cbc8c;
     font-family: 'regina';
-    /* margin-top: -8px; */
 }
 
 footer .content {
@@ -386,7 +385,6 @@ footer .content {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    /* width: 100%; */
     color: white;  
 }
 
@@ -420,7 +418,14 @@ footer i {
     font-size: 2.5rem;
 }
 
-/* media queries */
+/*        HOVER CHANGES        */
+
+.logos a img:hover {
+    opacity: .7;
+}
+
+
+/*        media queries        */
 
 /* tablet */
 @media (max-width: 992px) { 
