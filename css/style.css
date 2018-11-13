@@ -62,7 +62,7 @@ a {
     letter-spacing: 2px;
     color: white;
     padding-bottom: 5px;
-    transform: .3s all;
+    transform: .2s all ease-out;
 }
 
 .row {
@@ -124,7 +124,7 @@ nav {
     right: 0;
     left: 0;
     border-bottom: 2px solid;
-    transition: .3s all;
+    transition: .2s all ease-out;
 }
    
 
@@ -233,10 +233,6 @@ section:not(:first-of-type) {
     line-height: 2.7rem;
 }
 
-.about > p, .workshops > p {
-    font-size: 1.5rem;
-}
-
 .about a {
     color: #4cbc8c;
     border-bottom: 0px solid #4cbc8c;
@@ -261,7 +257,6 @@ section:not(:first-of-type) {
     align-items: center;
     padding: 0 3rem;
     flex: 1;
-    /* width: 90%; */
 }
 
 .about img {
@@ -293,7 +288,7 @@ section:not(:first-of-type) {
     margin: 1rem auto;
     padding: .5rem 2rem;
     text-align: left;
-    max-width: 100rem;
+    max-width: 80rem;
     letter-spacing: 1px;
 }
 
@@ -349,6 +344,46 @@ section:not(:first-of-type) {
     border-bottom: 0px solid #A44142;
 }
 
+/* new section */
+
+.new h3 {
+    color: #A44142;
+}
+
+.new h5 {
+    color: #4cbc8c;
+    font-size: 1.5rem;
+}
+
+.new a {
+    color: #4cbc8c;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+.sectionContent {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 80rem;
+    text-align: left;
+}
+
+.sectionContent p {
+    line-height: 2.3rem;
+}
+
+
+
+/* video section */
+
+.video {
+    background-color: #fece8a;
+}
+
+.video h3 {
+    color: #155375;
+}
+
 /* sponsors section */
 
 .sponsors h3 {
@@ -368,7 +403,7 @@ section:not(:first-of-type) {
 .logos a img {
     width: auto;
     max-height: 9.6rem;
-    transition: .3s all;
+    transition: .2s all ease-out;
 }
 
 /* footer */
@@ -541,15 +576,10 @@ footer i {
         top: 2.5rem;
     }
 
-    /* .workshops > p, .about > p {
-        padding: 2rem;
-    } */
-
     #logo {
         font-size: 3rem;
         margin-top: -.5rem;
     }
-
 
     .intro_btns {
         width: 100%;
@@ -558,10 +588,6 @@ footer i {
     .intro .row a:nth-child(2) {
         margin-top: 1.5rem;
     }
-
-    /* .about > p, .workshops > p {
-        margin: 2rem auto;
-    } */
 
     .about_col {
         flex: auto;
