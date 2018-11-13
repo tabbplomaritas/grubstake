@@ -94,6 +94,11 @@ header {
     /* box-sizing: border-box; */
 }
 
+header .linkA span:nth-child(2){
+    /* border: 2px solid red; */
+    display: none;
+}
+
 #logo {
     font-size: 4rem;
     color: #fece8a;
@@ -113,8 +118,8 @@ nav {
 }
 
 .linkB {
-    color:    #fece8a;
-    border-bottom: 2px solid #fece8a;
+    /* color:#fece8a;
+    border-bottom: 2px solid #fece8a; */
 }
 
 
@@ -123,11 +128,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding-top: 5rem;
+    padding: 12.5rem 0;
 }
 
 section > h3 {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
 }
 
 h2 {
@@ -150,7 +155,7 @@ h2 {
 } */
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 2.6rem;
     color: #4cbc8c;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -205,7 +210,7 @@ p {
 }
 
 .intro .row {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .intro p {
@@ -233,7 +238,6 @@ p {
 
 .about, .workshops {
     text-align: center;
-    padding-bottom: 10rem;
 }
 
 .about p {
@@ -379,6 +383,7 @@ footer {
 
 .footerHeader {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
@@ -419,22 +424,16 @@ footer i {
 /* tablet */
 @media (max-width: 992px) { 
     .intro {
-        padding-top: 0;
-    }
-       .animation_container {
-        display: none;
+        /* padding-top: 0; */
     }
 
-    .animation_mobile {
-        display: block;
-    }
     .eventRow {
-        width: 75%;
+        width: 85%;
         flex-direction: column;
         /* align-content: space-around; */
         align-items: stretch;
         margin: 2rem auto;
-        padding: 1.5rem 1.5rem 2rem 1.5rem;
+        padding: 1.5rem;
         position: relative;
     }
 
@@ -451,11 +450,11 @@ footer i {
     .eventRow .locationLinksWrapper div {
         position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 2.5rem;
     }
 
     .eventRow .location {
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
         align-self: flex-start;
     }
 
@@ -476,13 +475,27 @@ footer i {
 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
+
+    header .linkA span:nth-child(1){
+        display: none;
+    }
+
+    header .linkA span:nth-child(2){
+        display: block;
+    }
+
+    .animation_container {
+        display: none;
+    }
+
+    .animation_mobile {
+        display: block;
+    }
 
     header {
         align-items: flex-start;
-        right: 1rem;
-        left: 1rem;
-        top: 1rem;
+        top: 2.5rem;
     }
     .workshops > p, .about > p {
         width: auto;
@@ -512,9 +525,70 @@ footer i {
         /* flex-direction: column; */
     }
 
-    .col {
-        padding: 1rem;
+    .intro .row a:nth-child(2) {
+        margin-top: 1.5rem;
     }
 
- 
+    .about > p, .workshops > p {
+        margin: 2rem auto;
+    }
+
+    .about_col {
+        flex: auto;
+    }
+
+    .about_col:not(:last-child){
+        margin-bottom: 2.5rem;
+    }
+
+    .eventRow {
+        width: 100%;
+    }
+
+    .eventRow .locationLinksWrapper div {
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right; */
+        right: 1.5rem
+    }
+
+    .date {
+        font-size: 1.2rem;
+        letter-spacing: .7px;
+    }
+
+    .venue {
+        margin-top: 3rem;
+    }
+
+    .eventRow .locationLinksWrapper div a {
+        /* margin-right: 0;
+        width: 3.3rem; */
+        letter-spacing: 1.5px;
+        font-size: 18px;
+    }
+
+    .eventRow a:nth-of-type(1) {
+        margin-right: 1.5rem;
+    }
+
+    /* for the tiniest of mobile screens */
+    @media (max-width: 320px) {
+        .eventRow .locationLinksWrapper div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .eventRow .locationLinksWrapper div a {
+            margin: 0 0 .75rem 0;
+        }
+
+        .venue {
+            margin-top: 5rem;
+        }
+        
+    }
+   
 }

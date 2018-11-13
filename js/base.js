@@ -157,8 +157,8 @@ $(window).bind("scroll", function() {
     const $about = $('.about').offset().top -40;
     const $workshops = $('.workshops').offset().top - 40;
     const $logo = $('#logo');
-    const $navLinkA = $('nav > .linkA');
-    const $navLinkB = $('nav > .linkB');
+    const $navLinkA = $('header > .linkA');
+    // const $navLinkB = $('nav > .linkB');
     let $colorPrimary;
     let $colorSecondary;
     let $colorTertiary;
@@ -167,18 +167,18 @@ $(window).bind("scroll", function() {
    if ($(this).scrollTop() < $about){ 
         $logo.css("color", `${logoColor}`);
         $navLinkA.css({"color": `${color1}`, "border-bottom": `2px solid ${color1}`});
-        $navLinkB.css({"color": `${logoColor}`, "border-bottom": `2px solid ${logoColor}`});
+        // $navLinkB.css({"color": `${logoColor}`, "border-bottom": `2px solid ${logoColor}`});
        
    } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
         $logo.css("color", "#a5a4a4")
         $navLinkA.css({"color": "#4cbc8c", "border-bottom": "2px solid #4cbc8c"});
-        $navLinkB.css({"color": "#a5a4a4", "border-bottom": "2px solid #a5a4a4"});
+        // $navLinkB.css({"color": "#a5a4a4", "border-bottom": "2px solid #a5a4a4"});
         // $('.about').css("padding-top", "15rem");
 
    } else if ($(this).scrollTop() > $workshops){
         $logo.css("color", "#21704f")
         $navLinkA.css({"color": "white", "border-bottom": "2px solid white"});
-        $navLinkB.css({"color": "#21704f", "border-bottom": "2px solid #21704f"});
+        // $navLinkB.css({"color": "#21704f", "border-bottom": "2px solid #21704f"});
    }
 })
 
