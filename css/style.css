@@ -109,10 +109,24 @@ nav {
     justify-content: space-between;
 }
 
-.linkA {
+.linkA, .linkB {
     color: white;
-    border-bottom: 2px solid white;
+    position: relative;
+    border-bottom: 0px solid white;
 }
+
+.linkA:after, .linkB:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* width: 100%; */
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    border-bottom: 2px solid;
+    transition: .3s all;
+}
+   
 
 section {
     display: flex;
@@ -225,7 +239,7 @@ section:not(:first-of-type) {
 
 .about a {
     color: #4cbc8c;
-    border-bottom: 2px solid #4cbc8c;
+    border-bottom: 0px solid #4cbc8c;
 }
 
 .about .row, .workshops .row {
@@ -332,7 +346,7 @@ section:not(:first-of-type) {
 .eventRow a {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
     color: #A44142;
-    border-bottom: 2px solid #A44142;
+    border-bottom: 0px solid #A44142;
 }
 
 /* sponsors section */
@@ -422,6 +436,18 @@ footer i {
 
 .logos a img:hover {
     opacity: .7;
+}
+
+.linkA:hover:after {
+    /* right: -1rem;
+    left: -1rem; */
+    bottom: -.5rem;
+}
+
+.linkB:hover:after {
+    right: -1rem;
+    left: -1rem;
+    /* bottom: -.5rem; */
 }
 
 

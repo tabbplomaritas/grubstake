@@ -113,8 +113,8 @@ $(document).ready(() => {
     function setIntroDipslay(){
         $intro.css(`background-color`, `${backgroundColor}`);
         $logo.css('color', `${logoColor}`);
-        $linkA.css({'color': `${color1}`, 'border-bottom': `2px solid ${color1}`});
-        $linkB.css({'color': `${logoColor}`, 'border-bottom': `2px solid ${logoColor}`});
+        $linkA.css({'color': `${color1}`, 'border-bottom': `0px solid ${color1}`});
+        $linkB.css({'color': `${logoColor}`, 'border-bottom': `0px solid ${logoColor}`});
         $text.css('color', `${textColor}`);
         $heading.css('border-bottom', `.75rem solid ${textColor}`);
         $heading.text(`${headingText}`);
@@ -138,7 +138,7 @@ $(function() {
             <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
-                        <a href=${events[i].url}>Register now</a>
+                        <a href=${events[i].url} class="linkA">Register now</a>
                 </div>
             </div>
         </div`;
@@ -160,23 +160,23 @@ $(window).bind("scroll", function() {
     
    if ($(this).scrollTop() < $about){ 
         $logo.css("color", `${logoColor}`);
-        $navLinkA.css({"color": `${color1}`, "border-bottom": `2px solid ${color1}`});
+        $navLinkA.css({"color": `${color1}`, "border-bottom": `0px solid ${color1}`});
 
        
    } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
 
         $logo.css("color", "#a5a4a4")
-        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "2px solid #4cbc8c"});
+        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
 
    } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $sponsors){
 
         $logo.css("color", "#21704f")
-        $navLinkA.css({"color": "white", "border-bottom": "2px solid white"});
+        $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
 
    } else if ($(this).scrollTop() > $sponsors){
 
         $logo.css("color", "#a5a4a4")
-        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "2px solid #4cbc8c"});
+        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
    }
 })
 
