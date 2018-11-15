@@ -549,12 +549,12 @@ footer i {
 
     /* about section queries */
     .about_col h3 {
-        font-size: 1.3rem;
+        font-size: 2.3rem;
         letter-spacing: 2px;
     }
 
     .about_col h5 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
     .about a {
@@ -601,15 +601,15 @@ footer i {
 
 @media (max-width: 767px) { 
 
+    .intro {
+        text-align: center;
+    }
+
+
     section:not(:first-of-type) > p:first-of-type {
         padding: 0 2.5rem;
         margin: 3rem auto;
     }
-
-    /* TODO: do we need to reduce section padding on mobile?  */
-    /* section {
-        padding: 9.5rem 0;
-    } */
 
     header .linkA span:nth-child(1){
         display: none;
@@ -640,18 +640,15 @@ footer i {
 
     .intro_btns {
         width: 100%;
+        justify-content: center;
     }
-
-    /* .intro .row a:nth-child(2) {
-        margin-top: 1.5rem;
-    } */
 
     .about_col {
         flex: auto;
     }
 
     .about_col:not(:last-child){
-        margin-bottom: 4.5rem;
+        margin-bottom: 9.5rem;
     }
 
     .eventRow {
