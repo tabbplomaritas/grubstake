@@ -115,7 +115,7 @@ nav {
     border-bottom: 0px solid white;
 }
 
-.linkA:after, .linkB:after {
+.linkA:after, .linkB:after, .history .sectionContent a:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -123,8 +123,12 @@ nav {
     margin: 0 auto;
     right: 0;
     left: 0;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     transition: .2s all ease-out;
+}
+
+.history .sectionContent a:after {
+    border-bottom: 1px solid;
 }
    
 
@@ -285,11 +289,12 @@ section:not(:first-of-type) {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    margin: 1rem auto;
+    margin: 0 auto 2.5rem auto;
     padding: .5rem 2rem;
     text-align: left;
-    max-width: 96rem;
+    max-width: 92rem;
     letter-spacing: 1px;
+    box-sizing: content-box;
 }
 
 .eventRow .row {
@@ -361,8 +366,18 @@ section:not(:first-of-type) {
     margin: 0 auto;
 }
 
+.history .sectionContent a {
+    font-family: 'avenir', sans-serif;
+    font-size: 1.3rem;
+    color: #4cbc8c;
+    letter-spacing: .5px;
+    position: relative;
+    padding-bottom: 0;
+    border-bottom: 0px solid #4cbc8c;
+}
+
 .sectionContent {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 90%;
     max-width: 96rem;
     text-align: left;
@@ -370,6 +385,7 @@ section:not(:first-of-type) {
 
 .sectionContent p {
     line-height: 2.3rem;
+    letter-spacing: .5px;
 }
 
 
@@ -473,7 +489,7 @@ footer i {
     opacity: .7;
 }
 
-.linkA:hover:after, .linkB:hover:after {
+.linkA:hover:after, .linkB:hover:after, .history .sectionContent a:hover:after {
     bottom: -.5rem; 
 }
 
