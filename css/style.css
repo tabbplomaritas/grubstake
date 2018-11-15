@@ -59,6 +59,7 @@ body {
 a {
     font-size: 2rem;
     font-family: 'bebas-neue-by-fontfabric',sans-serif;
+    font-weight: 600;
     letter-spacing: 2px;
     color: white;
     padding-bottom: 5px;
@@ -123,7 +124,7 @@ nav {
     margin: 0 auto;
     right: 0;
     left: 0;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     transition: .2s all ease-out;
 }
 
@@ -379,6 +380,7 @@ section:not(:first-of-type) {
     color: #4cbc8c;
     width: 20rem;
     margin: 0 auto;
+    font-weight: 100;
 }
 
 .history .sectionContent a {
@@ -417,6 +419,7 @@ section:not(:first-of-type) {
 
 .resources .col p {
     line-height: 2.3rem;
+    max-width: 35rem;
 }
 
 .resources h3 {
@@ -428,6 +431,11 @@ section:not(:first-of-type) {
     font-size: 1.4rem;
     letter-spacing: 1px;
     text-align: center;
+}
+
+.resources a {
+    color: #A44142;
+    border-bottom: 2px;
 }
 
 /* sponsors section */
