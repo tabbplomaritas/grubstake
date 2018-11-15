@@ -411,8 +411,23 @@ section:not(:first-of-type) {
     background-color: #fece8a;
 }
 
+.resources .col {
+    align-items: center;
+}
+
+.resources .col p {
+    line-height: 2.3rem;
+}
+
 .resources h3 {
     color: #155375;
+}
+
+.resources h4 {
+    color: #A44142;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 /* sponsors section */
