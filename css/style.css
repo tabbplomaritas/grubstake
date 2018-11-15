@@ -288,7 +288,7 @@ section:not(:first-of-type) {
     margin: 1rem auto;
     padding: .5rem 2rem;
     text-align: left;
-    max-width: 80rem;
+    max-width: 96rem;
     letter-spacing: 1px;
 }
 
@@ -344,18 +344,18 @@ section:not(:first-of-type) {
     border-bottom: 0px solid #A44142;
 }
 
-/* new section */
+/* history section */
 
-.new h3 {
+.history h3 {
     color: #A44142;
 }
 
-.new h5 {
+.history h5 {
     color: #4cbc8c;
     font-size: 1.5rem;
 }
 
-.new a {
+.history a {
     color: #4cbc8c;
     width: 20rem;
     margin: 0 auto;
@@ -364,7 +364,7 @@ section:not(:first-of-type) {
 .sectionContent {
     margin: 0 auto;
     width: 90%;
-    max-width: 80rem;
+    max-width: 96rem;
     text-align: left;
 }
 
@@ -374,13 +374,13 @@ section:not(:first-of-type) {
 
 
 
-/* video section */
+/* resources section */
 
-.video {
+.resources {
     background-color: #fece8a;
 }
 
-.video h3 {
+.resources h3 {
     color: #155375;
 }
 
@@ -473,17 +473,10 @@ footer i {
     opacity: .7;
 }
 
-.linkA:hover:after {
-    /* right: -1rem;
-    left: -1rem; */
-    bottom: -.5rem;
+.linkA:hover:after, .linkB:hover:after {
+    bottom: -.5rem; 
 }
 
-.linkB:hover:after {
-    right: -1rem;
-    left: -1rem;
-    /* bottom: -.5rem; */
-}
 
 
 /*        media queries        */
