@@ -7,52 +7,53 @@ $(document).ready(() => {
             date: 'dec. 15, 2018',
             venue: 'New Life Church',
             location: 'wayland, MI', 
-            url: '#'
+            url: 'https://www.eventbrite.com/e/wayland-mi-local-investing-workshop-tickets-52679468709',
+            btnText: 'register now'
         },
         {
             date: 'Jan. 17, 2019',
             venue: 'Comstock Inn',
             location: 'Owosso, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         },
         {
             date: 'Jan. 24, 2019',
-            venue: 'tbd',
+            venue: 'Venue tbd',
             location: 'Niles, MI', 
-            url: '#'
-        },
-        {
-            date: 'Mar. 30, 2019',
-            venue: 'WeWork',
-            location: 'Detroit, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         },
         {
             date: 'mar. 21, 2019',
-            venue: 'tbd',
+            venue: 'Venue tbd',
             location: 'Milan, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         },
          {
-            date: 'apr.  9, 2019',
-            venue: 'tbd',
+            date: 'apr. 9, 2019',
+            venue: 'Venue tbd',
             location: 'Wayne, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         },
         {
             date: 'may. 7, 2019',
-            venue: 'tbd',
+            venue: 'Venue tbd',
             location: 'Sault Ste Marie, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         },
         {
             date: 'may. 9, 2019',
             venue: 'Library: Community Room',
             location: 'Charlevoix, MI', 
-            url: '#'
+            url: '#',
+            btnText: 'Coming Soon'
         }
     ]
-    
+
 
     //randomly choose which landing page screen user will see
     let randomNum = Math.floor(Math.random() * 5) + 1  
@@ -151,7 +152,7 @@ $(function() {
             <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
-                        <a href=${events[i].url} target="_blank" class="linkA">Register now</a>
+                    <a href=${events[i].url} target="_blank" class="linkA eventBtn">${events[i].btnText}</a>
                 </div>
             </div>
         </div`;
@@ -160,6 +161,21 @@ $(function() {
     }
 });
 
+function addEventButtonStyle () {
+    console.log('button event');
+
+    const $eventLinks = $('.eventBtn');
+
+    $eventLinks.each(function() {
+        console.log('hi');
+        
+    //   $( this ).addClass( "foo" );
+});
+}
+
+addEventButtonStyle();
+
+ 
 
 $(window).bind("scroll", function() { 
     // const $intro = $('.intro').offset().top -40;

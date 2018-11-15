@@ -345,7 +345,6 @@ section:not(:first-of-type) {
 .venue {
     text-align: left;
     margin: 2rem 2rem 2rem 3rem;
-    text-transform: capitalize;
 }
 
 .location {
@@ -355,6 +354,11 @@ section:not(:first-of-type) {
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 2px;
+}
+
+.linkA .disabled {
+    color: #A3A3A3;
+    cursor: not-allowed;
 }
 
 .eventRow a {
@@ -631,6 +635,7 @@ footer i {
     #logo {
         font-size: 3rem;
         margin-top: -.5rem;
+        letter-spacing: .5px;
     }
 
     .intro_btns {
