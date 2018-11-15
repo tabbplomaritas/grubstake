@@ -164,11 +164,13 @@ $(window).bind("scroll", function() {
     // const $intro = $('.intro').offset().top -40;
     const $about = $('.about').offset().top -40;
     const $workshops = $('.workshops').offset().top - 40;
+    const $history = $('.history').offset().top - 40;
+    const $resources = $('.resources').offset().top - 40;
     const $sponsors = $('.sponsors').offset().top - 40;
+
     const $logo = $('#logo');
     const $navLinkA = $('header > .linkA');
 
-    // const $navLinkB = $('nav > .linkB');
     
    if ($(this).scrollTop() < $about){ 
         $logo.css("color", `${logoColor}`);
@@ -177,12 +179,22 @@ $(window).bind("scroll", function() {
        
    } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
 
-        $logo.css("color", "#a5a4a4")
+        $logo.css("color", "#ed9a99")
         $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
 
-   } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $sponsors){
+   } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $history){
 
         $logo.css("color", "#21704f")
+        $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
+
+   }else if ($(this).scrollTop() > $history && $(this).scrollTop() < $resources){
+
+        $logo.css("color", "#4cbc8c")
+        $navLinkA.css({"color": "#bd3f40", "border-bottom": "0 solid #bd3f40"});
+
+   }else if ($(this).scrollTop() > $resources && $(this).scrollTop() < $sponsors){
+
+        $logo.css("color", "#bd3f40")
         $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
 
    } else if ($(this).scrollTop() > $sponsors){

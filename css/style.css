@@ -104,12 +104,6 @@ header .linkA span:nth-child(2){
     padding: 0;
 }
 
-nav {
-    width: 18rem;
-    display: flex;
-    justify-content: space-between;
-}
-
 .linkA, .linkB {
     color: white;
     position: relative;
@@ -120,7 +114,6 @@ nav {
     content: "";
     position: absolute;
     bottom: 0;
-    /* width: 100%; */
     margin: 0 auto;
     right: 0;
     left: 0;
@@ -213,6 +206,11 @@ section:not(:first-of-type) > p:first-of-type {
     font-size: 1.5rem;
     line-height: 2.3rem;
     margin: 5rem auto;
+}
+
+.intro p {
+    margin: 2rem 0;
+    max-width: 43rem;
 }
 
 .intro_btns {
