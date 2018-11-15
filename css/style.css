@@ -1,4 +1,4 @@
- /* font-family: bebas-neue-v14-deprecated,sans-serif; */
+
  /* colors:
     #4cbc8c
     #ed9a99
@@ -63,7 +63,7 @@ a {
     letter-spacing: 2px;
     color: white;
     padding-bottom: 5px;
-    transform: .2s all ease-out;
+    transition: .2s all ease-out;
 }
 
 .row {
@@ -102,6 +102,7 @@ header .linkA span:nth-child(2){
     color: #fece8a;
     font-family: 'regina';
     padding: 0;
+    letter-spacing: 3px;
 }
 
 .linkA, .linkB {
