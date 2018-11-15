@@ -17,7 +17,7 @@ $(document).ready(() => {
         },
         {
             date: 'Jan. 24, 2019',
-            venue: 'TBD',
+            venue: 'tbd',
             location: 'Niles, MI', 
             url: '#'
         },
@@ -29,12 +29,12 @@ $(document).ready(() => {
         },
         {
             date: 'mar. 21, 2019',
-            venue: 'TBD',
+            venue: 'tbd',
             location: 'Milan, MI', 
             url: '#'
         },
          {
-            date: 'apr. 9, 2019',
+            date: 'apr.  9, 2019',
             venue: 'tbd',
             location: 'Wayne, MI', 
             url: '#'
@@ -47,7 +47,7 @@ $(document).ready(() => {
         },
         {
             date: 'may. 9, 2019',
-            venue: 'tbd',
+            venue: 'Library: Community Room',
             location: 'Charlevoix, MI', 
             url: '#'
         }

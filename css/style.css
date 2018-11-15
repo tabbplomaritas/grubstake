@@ -637,9 +637,9 @@ footer i {
         width: 100%;
     }
 
-    .intro .row a:nth-child(2) {
+    /* .intro .row a:nth-child(2) {
         margin-top: 1.5rem;
-    }
+    } */
 
     .about_col {
         flex: auto;
@@ -694,7 +694,24 @@ footer i {
 }
 
     /* for the tiniest of mobile screens */
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+
+    h2 {
+        font-size: 7rem;
+    }
+
+    header {
+        align-items: center;
+        top: 0;
+    }
+
+    header .linkA {
+        font-size: 1.7rem;
+    }
+    .intro .row a:nth-child(2) {
+        margin-top: 1.5rem;
+    }
+
     .eventRow .locationLinksWrapper div {
         display: flex;
         flex-direction: column;
