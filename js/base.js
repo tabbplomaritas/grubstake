@@ -4,21 +4,21 @@ $(document).ready(() => {
 
     const events = [
         {
-            date: 'NOV. 30, 2019',
-            venue: 'Traverse City Chamber of Commerce',
-            location: 'Traverse City, MI', 
+            date: 'dec. 15, 2018',
+            venue: 'New Life Church',
+            location: 'wayland, MI', 
             url: '#'
         },
         {
-            date: 'Jan. 16, 2019',
-            venue: 'Adrian City Hall',
-            location: 'Adrian, MI', 
+            date: 'Jan. 17, 2019',
+            venue: 'Comstock Inn',
+            location: 'Owosso, MI', 
             url: '#'
         },
         {
-            date: 'Feb. 22, 2019',
-            venue: 'Ypsilanti Public Library',
-            location: 'Ypsilanti, MI', 
+            date: 'Jan. 24, 2019',
+            venue: 'TBD',
+            location: 'Niles, MI', 
             url: '#'
         },
         {
@@ -28,15 +28,27 @@ $(document).ready(() => {
             url: '#'
         },
         {
-            date: 'Apr. 19, 2019',
-            venue: 'Lansing City Market',
-            location: 'Lansing, MI', 
+            date: 'mar. 21, 2019',
+            venue: 'TBD',
+            location: 'Milan, MI', 
             url: '#'
         },
          {
-            date: 'May. 18, 2019',
-            venue: 'Kent County Chamber of Commerce',
-            location: 'Grand Rapids, MI', 
+            date: 'apr. 9, 2019',
+            venue: 'tbd',
+            location: 'Wayne, MI', 
+            url: '#'
+        },
+        {
+            date: 'may. 7, 2019',
+            venue: 'tbd',
+            location: 'Sault Ste Marie, MI', 
+            url: '#'
+        },
+        {
+            date: 'may. 9, 2019',
+            venue: 'tbd',
+            location: 'Charlevoix, MI', 
             url: '#'
         }
     ]
@@ -138,7 +150,7 @@ $(function() {
             <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
-                        <a href=${events[i].url} class="linkA">Register now</a>
+                        <a href=${events[i].url} target="_blank" class="linkA">Register now</a>
                 </div>
             </div>
         </div`;

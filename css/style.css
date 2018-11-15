@@ -332,6 +332,7 @@ section:not(:first-of-type) {
 .venue {
     text-align: left;
     margin: 2rem 2rem 2rem 3rem;
+    text-transform: capitalize;
 }
 
 .location {
