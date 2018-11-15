@@ -52,6 +52,7 @@ $(document).ready(() => {
             url: '#'
         }
     ]
+    
 
     //randomly choose which landing page screen user will see
     let randomNum = Math.floor(Math.random() * 5) + 1  
