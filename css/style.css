@@ -415,6 +415,7 @@ section:not(:first-of-type) {
 
 .resources .col {
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .resources .col p {
