@@ -437,12 +437,18 @@ section:not(:first-of-type) {
 .resources a {
     color: #A44142;
     border-bottom: 2px;
+    display: block;
+}
+
+.resources > a {
+    margin: 5rem auto 0 auto;
+    color: #155375;
 }
 
 /* sponsors section */
 
 .sponsors h3 {
-    color: #ED9A99;
+    color: #4cbc8c;
 }
 
 .logos {
