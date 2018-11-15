@@ -605,6 +605,9 @@ footer i {
         text-align: center;
     }
 
+    .intro .col {
+        align-items: center;
+    }
 
     section:not(:first-of-type) > p:first-of-type {
         padding: 0 2.5rem;
@@ -700,6 +703,7 @@ footer i {
 
     h2 {
         font-size: 7rem;
+        letter-spacing: .5px;
     }
 
     header {
