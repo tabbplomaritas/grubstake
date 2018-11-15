@@ -267,6 +267,10 @@ section:not(:first-of-type) {
     flex: 1;
 }
 
+.about_col p {
+    max-width: 37rem;
+}
+
 .about img {
     width: auto;
     height: 20rem;
@@ -614,11 +618,12 @@ footer i {
     }
 
     .about_col:not(:last-child){
-        margin-bottom: 2.5rem;
+        margin-bottom: 4.5rem;
     }
 
     .eventRow {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .eventRow .locationLinksWrapper div {
