@@ -233,6 +233,10 @@ section:not(:first-of-type) {
     text-align: center;
 }
 
+.about h5 {
+    margin: 2.6rem auto 0.6rem auto
+}
+
 .about p {
     line-height: 2.7rem;
 }
@@ -264,7 +268,13 @@ section:not(:first-of-type) {
 }
 
 .about img {
-    width: 70%;
+    width: auto;
+    height: 20rem;
+}
+
+/* bumping this over in order to make is visually centered as there is uneven white space */
+.about_col:nth-of-type(3) img {
+    transform: translateX(-13px);
 }
 
 /* workshops section */
