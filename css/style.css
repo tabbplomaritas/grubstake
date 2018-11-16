@@ -325,6 +325,7 @@ section:not(:first-of-type) {
     padding: 0;
     margin: 0;
     width: 100%;
+    position: relative;
 }
 
 .eventRow .dateVenueWrapper {
@@ -357,7 +358,7 @@ section:not(:first-of-type) {
     letter-spacing: 2px;
 }
 
-.linkA .disabled {
+.disabled {
     color: #A3A3A3;
     cursor: not-allowed;
 }
@@ -366,6 +367,24 @@ section:not(:first-of-type) {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
     color: #A44142;
     border-bottom: 0px solid #A44142;
+}
+
+.eventRow .locationLinksWrapper button {
+    font-family: 'bebas-neue-v14-deprecated',sans-serif;
+    color: #444545;
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    font-size: 2rem;
+    font-family: 'bebas-neue-by-fontfabric',sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    cursor: default;
+}
+
+.hide {
+    display: none;
 }
 
 /* history section */

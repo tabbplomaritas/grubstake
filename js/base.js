@@ -19,28 +19,28 @@ $(document).ready(() => {
         },
         {
             date: 'Jan. 24, 2019',
-            venue: 'Venue tbd',
+            venue: 'Location TBD',
             location: 'Niles, MI', 
             url: '#',
             btnText: 'Coming Soon'
         },
         {
             date: 'mar. 21, 2019',
-            venue: 'Venue tbd',
+            venue: 'Location TBD',
             location: 'Milan, MI', 
             url: '#',
             btnText: 'Coming Soon'
         },
          {
             date: 'apr. 9, 2019',
-            venue: 'Venue tbd',
+            venue: 'Location TBD',
             location: 'Wayne, MI', 
             url: '#',
             btnText: 'Coming Soon'
         },
         {
             date: 'may. 7, 2019',
-            venue: 'Venue tbd',
+            venue: 'Location TBD',
             location: 'Sault Ste Marie, MI', 
             url: '#',
             btnText: 'Coming Soon'
@@ -135,7 +135,7 @@ $(document).ready(() => {
         $img.attr('src', `./assets/animations/${imageSrc}`);
     }
 
-    setIntroDipslay();
+ 
   
 
 //generate events table
@@ -152,7 +152,8 @@ $(function() {
             <div class="col-sm-12 col-md-6">
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
-                    <a href=${events[i].url} target="_blank" class="linkA eventBtn">${events[i].btnText}</a>
+                    <a href=${events[i].url} target="_blank" class="linkA eventLink">Register Now</a>
+                    <button class="eventButton">${events[i].btnText}</button>
                 </div>
             </div>
         </div`;
@@ -164,16 +165,31 @@ $(function() {
 function addEventButtonStyle () {
     console.log('button event');
 
-    const $eventLinks = $('.eventBtn');
+    const $eventLinks = $('.eventLink');
+    const $eventButtons = $('.eventButton');
 
-    $eventLinks.each(function() {
-        console.log('hi');
+    $eventButtons.each(function(i) {
+        let link = $eventLinks[i];
+        let button = $eventButtons[i];
+        console.log(button);
+        console.log(link);
         
-    //   $( this ).addClass( "foo" );
+        if(button.innerHTML != 'Coming Soon') {
+            console.log(button);
+            button.classList.add('hide');
+        } else {
+            link.classList.add('hide');
+        }
+        
 });
 }
+    setIntroDipslay();
 
-addEventButtonStyle();
+    setTimeout(() => {
+        addEventButtonStyle();
+    }, 1000);
+
+
 
  
 
