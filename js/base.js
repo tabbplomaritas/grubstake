@@ -163,7 +163,6 @@ $(function() {
 });
 
 function addEventButtonStyle () {
-    console.log('button event');
 
     const $eventLinks = $('.eventLink');
     const $eventButtons = $('.eventButton');
@@ -171,8 +170,6 @@ function addEventButtonStyle () {
     $eventButtons.each(function(i) {
         let link = $eventLinks[i];
         let button = $eventButtons[i];
-        console.log(button);
-        console.log(link);
         
         if(button.innerHTML != 'Coming Soon') {
             console.log(button);
@@ -187,7 +184,7 @@ function addEventButtonStyle () {
 
     setTimeout(() => {
         addEventButtonStyle();
-    }, 1000);
+    }, 300);
 
 
 
