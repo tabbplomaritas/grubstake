@@ -153,7 +153,7 @@ $(function() {
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
                     <a href=${events[i].url} target="_blank" class="linkA eventLink">Register Now</a>
-                    <button class="eventButton">${events[i].btnText}</button>
+                    <button class="eventButton" disabled>${events[i].btnText}</button>
                 </div>
             </div>
         </div`;

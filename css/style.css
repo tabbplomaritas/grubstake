@@ -373,7 +373,7 @@ section:not(:first-of-type) {
 
 .eventRow .locationLinksWrapper button {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
-    color: #444545;
+    color: #a5a4a4;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 600;
@@ -381,6 +381,7 @@ section:not(:first-of-type) {
     padding-bottom: 5px;
     cursor: default;
     background-color: white;
+    transition: .25s all;
 }
 
 .hide {
@@ -552,12 +553,16 @@ footer i {
 
 /*        HOVER CHANGES        */
 
-.logos a img:hover {
+.logos a img:hover, .socialLinks a:hover {
     opacity: .7;
 }
 
 .linkA:hover:after, .linkB:hover:after, .history .sectionContent a:hover:after {
     bottom: -.5rem; 
+}
+
+.eventRow .locationLinksWrapper button:hover {
+    color: #444545;
 }
 
 
