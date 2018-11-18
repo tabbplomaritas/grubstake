@@ -637,7 +637,7 @@ footer i {
 
     section:not(:first-of-type) > p:first-of-type {
         padding: 0 2.5rem;
-        margin: 3rem auto;
+        margin: 3rem auto 4rem auto;
     }
 
     header .linkA span:nth-child(1){
@@ -654,6 +654,7 @@ footer i {
 
     .animation_mobile {
         display: block;
+        margin-bottom: 5rem;
     }
 
     header {
@@ -722,10 +723,24 @@ footer i {
         margin: 2rem;
         width: auto;
     }
+
+    /* .intro .row a:nth-child(2) {
+        margin-top: 2rem;
+    } */
 }
 
     /* for the tiniest of mobile screens */
 @media (max-width: 375px) {
+
+    .intro .row a:nth-child(2) {
+        margin-top: 1.5rem;
+    }
+
+    .intro_btns {
+        width: 100%;
+        justify-content: center;
+    }
+
 
     h2 {
         font-size: 7rem;
@@ -740,9 +755,9 @@ footer i {
     header .linkA {
         font-size: 1.7rem;
     }
-    .intro .row a:nth-child(2) {
+    /* .intro .row a:nth-child(2) {
         margin-top: 1.5rem;
-    }
+    } */
 
     .eventRow .locationLinksWrapper div {
         display: flex;
