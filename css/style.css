@@ -54,6 +54,8 @@ body {
     font-family: 'avenir', sans-serif;
     font-size: 1.3rem;
     overflow-x: hidden;
+    max-width: 140rem;
+    margin: 0 auto;
 }
 
 a {
