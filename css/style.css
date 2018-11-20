@@ -120,7 +120,7 @@ header .linkA span:nth-child(2){
     position: absolute;
     bottom: 0;
     margin: 0 auto;
-    right: 0;
+    right: 2.5px;
     left: 0;
     border-bottom: 2px solid;
     transition: .2s all ease-out;
@@ -411,7 +411,6 @@ section:not(:first-of-type) {
 
 .history a {
     color: #4cbc8c;
-    width: 20rem;
     margin: 0 auto;
     font-weight: 100;
 }
