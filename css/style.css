@@ -417,7 +417,7 @@ section:not(:first-of-type) {
 
 .history .sectionContent a {
     font-family: 'avenir', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #4cbc8c;
     letter-spacing: .5px;
     position: relative;
