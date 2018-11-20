@@ -206,6 +206,11 @@ p {
     flex-wrap: wrap;
 }
 
+.intro .row:first-child {
+    max-width: 120rem;
+    align-self: center;
+}
+
 section:not(:first-of-type) > p:first-of-type {
     max-width: 55rem;
     font-size: 1.5rem;
@@ -574,6 +579,23 @@ footer i {
 
 /*        media queries        */
 
+    @media (min-width: 1200px) {
+
+       .intro .row:first-child { 
+            box-sizing: content-box;
+            width: 100%;
+       }
+
+        .col .animation_container {
+            padding-right: 0;
+        }
+
+       .animation_desktop {
+           align-self: flex-end;
+       }
+
+    }
+
 /* tablet */
 @media (max-width: 992px) { 
 
@@ -734,10 +756,6 @@ footer i {
         margin: 2rem;
         width: auto;
     }
-
-    /* .intro .row a:nth-child(2) {
-        margin-top: 2rem;
-    } */
 }
 
     /* for the tiniest of mobile screens */
@@ -766,9 +784,7 @@ footer i {
     header .linkA {
         font-size: 1.7rem;
     }
-    /* .intro .row a:nth-child(2) {
-        margin-top: 1.5rem;
-    } */
+
 
     .eventRow .locationLinksWrapper div {
         display: flex;
@@ -791,6 +807,7 @@ footer i {
     footer h3 {
         font-size: 1.5rem;
     }
-    
+
+
 }
    
