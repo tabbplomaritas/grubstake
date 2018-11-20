@@ -8,49 +8,42 @@ $(document).ready(() => {
             venue: 'New Life Church',
             location: 'wayland, MI', 
             url: 'https://www.eventbrite.com/e/wayland-mi-local-investing-workshop-tickets-52679468709',
-            btnText: 'register now'
         },
         {
             date: 'Jan. 17, 2019',
             venue: 'Comstock Inn',
             location: 'Owosso, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/owosso-mi-local-investing-workshop-tickets-52871391756',
         },
         {
             date: 'Jan. 24, 2019',
             venue: 'Location TBD',
             location: 'Niles, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/niles-mi-local-investing-workshop-tickets-52872080817',
         },
         {
             date: 'mar. 21, 2019',
             venue: 'Location TBD',
             location: 'Milan, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/milan-mi-local-investing-workshop-tickets-52872248318'
         },
          {
             date: 'apr. 9, 2019',
             venue: 'Location TBD',
             location: 'Wayne, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/wayne-mi-local-investing-workshop-tickets-52872814010'
         },
         {
             date: 'may. 7, 2019',
             venue: 'Location TBD',
             location: 'Sault Ste Marie, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/sault-ste-marie-mi-local-investing-workshop-tickets-52873761845'
         },
         {
             date: 'may. 9, 2019',
             venue: 'Library: Community Room',
             location: 'Charlevoix, MI', 
-            url: '#',
-            btnText: 'Coming Soon'
+            url: 'https://www.eventbrite.com/e/charlevoix-mi-local-investing-workshop-tickets-52873301468'
         }
     ]
 
@@ -153,7 +146,6 @@ $(function() {
                 <div class="row locationLinksWrapper">
                     <p class="location">${events[i].location}</p>
                     <a href=${events[i].url} target="_blank" class="linkA eventLink">Register Now</a>
-                    <button class="eventButton" disabled>${events[i].btnText}</button>
                 </div>
             </div>
         </div`;
@@ -162,29 +154,9 @@ $(function() {
     }
 });
 
-function addEventButtonStyle () {
 
-    const $eventLinks = $('.eventLink');
-    const $eventButtons = $('.eventButton');
-
-    $eventButtons.each(function(i) {
-        let link = $eventLinks[i];
-        let button = $eventButtons[i];
-        
-        if(button.innerHTML != 'Coming Soon') {
-            console.log(button);
-            button.classList.add('hide');
-        } else {
-            link.classList.add('hide');
-        }
-        
-});
-}
     setIntroDipslay();
 
-    setTimeout(() => {
-        addEventButtonStyle();
-    }, 300);
 
 
 
