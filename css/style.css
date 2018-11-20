@@ -46,6 +46,8 @@ body {
 
 p {
     font-size: 1.5rem;
+    margin: 2rem auto;
+    color: #444444;
 }
 
 a {
@@ -165,9 +167,6 @@ h5 {
     letter-spacing: 3px;
 }
 
-p {
-    margin: 2rem auto;
-}
 
 .animation_desktop {
     width: 75%;
@@ -492,7 +491,6 @@ section:not(:first-of-type) {
 
 footer {
     background-color: #444444;
-    /* height: 30rem; */
     padding: 2.5rem;
 }
 
