@@ -1,13 +1,4 @@
 
- /* colors:
-    #4cbc8c
-    #ed9a99
-    #fece8a
-    #a5a4a4
-    #21704f
-    #bd3f40 
-    */
-
 /* resets */
 
 * {
@@ -18,10 +9,6 @@
     vertical-align: baseline;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-* {
-    /* outline: 1px solid red; */
 }
 
 ul, ol {
@@ -138,6 +125,8 @@ section {
     align-content: center;
     padding: 12.5rem 0;
 }
+
+
 
 
 h2 {
