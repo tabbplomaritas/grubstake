@@ -89,7 +89,7 @@ $(document).ready(() => {
         break
 
     case 3:
-        backgroundColor = '#434343';
+        backgroundColor = '#444444';
         logoColor = '#4CBC8C';
         color1  = '#ffffff';
         textColor = '#ED9A99';
