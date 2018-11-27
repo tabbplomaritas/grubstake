@@ -16,7 +16,7 @@ $(document).ready(() => {
             url: 'https://www.eventbrite.com/e/owosso-mi-local-investing-workshop-tickets-52871391756',
         },
         {
-            date: 'Jan. 24, 2019',
+            date: 'Mar. 14, 2019',
             venue: 'Location TBD',
             location: 'Niles, MI', 
             url: 'https://www.eventbrite.com/e/niles-mi-local-investing-workshop-tickets-52872080817',
