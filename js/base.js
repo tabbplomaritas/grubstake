@@ -1,6 +1,7 @@
 "use strict";
 
 $(document).ready(() => {
+console.log('document ready!');
 
     const events = [
         {
@@ -128,83 +129,74 @@ $(document).ready(() => {
         $img.attr('src', `./assets/animations/${imageSrc}`);
     }
 
- 
-  
-
-//generate events table
-$(function() {
-    for(let i=0; i < events.length; i++) {
-        let eventRow = `
-        <div class="eventRow"> 
-            <div class="col-sm-12 col-md-6">
-                <div class="row dateVenueWrapper">
-                    <p class="date">${events[i].date}</p>
-                    <p class="venue">${events[i].venue}</p>
+    //generate events table
+    $(function() {
+        for(let i=0; i < events.length; i++) {
+            let eventRow = `
+            <div class="eventRow"> 
+                <div class="col-sm-12 col-md-6">
+                    <div class="row dateVenueWrapper">
+                        <p class="date">${events[i].date}</p>
+                        <p class="venue">${events[i].venue}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <div class="row locationLinksWrapper">
-                    <p class="location">${events[i].location}</p>
-                    <a href=${events[i].url} target="_blank" class="linkA eventLink">Register Now</a>
+                <div class="col-sm-12 col-md-6">
+                    <div class="row locationLinksWrapper">
+                        <p class="location">${events[i].location}</p>
+                        <a href=${events[i].url} target="_blank" class="linkA eventLink">Register Now</a>
+                    </div>
                 </div>
-            </div>
-        </div`;
+            </div`;
 
-         $(".workshopEvents").append(eventRow);
-    }
-});
+            $(".workshopEvents").append(eventRow);
+        }
+    });
 
 
     setIntroDipslay();
 
+    $(window).bind("scroll", function() { 
+        // const $intro = $('.intro').offset().top -40;
+        const $about = $('.about').offset().top -40;
+        const $workshops = $('.workshops').offset().top - 40;
+        const $history = $('.history').offset().top - 40;
+        const $resources = $('.resources').offset().top - 40;
+        const $sponsors = $('.sponsors').offset().top - 40;
 
+        const $logo = $('#logo');
+        const $navLinkA = $('header > .linkA');
 
+        
+    if ($(this).scrollTop() < $about){ 
+            $logo.css("color", `${logoColor}`);
+            $navLinkA.css({"color": `${color1}`, "border-bottom": `0px solid ${color1}`});
 
- 
+        
+    } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
 
-$(window).bind("scroll", function() { 
-    // const $intro = $('.intro').offset().top -40;
-    const $about = $('.about').offset().top -40;
-    const $workshops = $('.workshops').offset().top - 40;
-    const $history = $('.history').offset().top - 40;
-    const $resources = $('.resources').offset().top - 40;
-    const $sponsors = $('.sponsors').offset().top - 40;
+            $logo.css("color", "#ed9a99")
+            $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
 
-    const $logo = $('#logo');
-    const $navLinkA = $('header > .linkA');
+    } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $history){
 
-    
-   if ($(this).scrollTop() < $about){ 
-        $logo.css("color", `${logoColor}`);
-        $navLinkA.css({"color": `${color1}`, "border-bottom": `0px solid ${color1}`});
+            $logo.css("color", "#21704f")
+            $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
 
-       
-   } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
+    }else if ($(this).scrollTop() > $history && $(this).scrollTop() < $resources){
 
-        $logo.css("color", "#ed9a99")
-        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
+            $logo.css("color", "#4cbc8c")
+            $navLinkA.css({"color": "#bd3f40", "border-bottom": "0 solid #bd3f40"});
 
-   } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $history){
+    }else if ($(this).scrollTop() > $resources && $(this).scrollTop() < $sponsors){
 
-        $logo.css("color", "#21704f")
-        $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
+            $logo.css("color", "#bd3f40")
+            $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
 
-   }else if ($(this).scrollTop() > $history && $(this).scrollTop() < $resources){
+    } else if ($(this).scrollTop() > $sponsors){
 
-        $logo.css("color", "#4cbc8c")
-        $navLinkA.css({"color": "#bd3f40", "border-bottom": "0 solid #bd3f40"});
+            $logo.css("color", "#a5a4a4")
+            $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
+    }
+    });
 
-   }else if ($(this).scrollTop() > $resources && $(this).scrollTop() < $sponsors){
-
-        $logo.css("color", "#bd3f40")
-        $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
-
-   } else if ($(this).scrollTop() > $sponsors){
-
-        $logo.css("color", "#a5a4a4")
-        $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
-   }
-})
-
-
-})
+});
