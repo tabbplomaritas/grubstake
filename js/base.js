@@ -1,7 +1,6 @@
 "use strict";
 
 $(document).ready(function () {
-    console.log('document ready!');
 
     var events = [{
         date: 'dec. 15, 2018',
