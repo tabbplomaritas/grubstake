@@ -1,9 +1,9 @@
 "use strict";
 
-$(document).ready(() => {
+$( document ).ready(function() {
 console.log('document ready!');
 
-    const events = [
+    var events = [
         {
             date: 'dec. 15, 2018',
             venue: 'New Life Church',
@@ -53,13 +53,13 @@ console.log('document ready!');
     let randomNum = Math.floor(Math.random() * 5) + 1  
 
     //declare elements to be chagned
-    const $intro = $(".intro");
-    const $logo = $("#logo");
-    const $linkA = $('.intro .linkA');
-    const $linkB = $('.intro .linkB');
-    const $text = $('.intro .col');
-    const $img = $('.intro img');
-    const $heading = $('.intro h2');
+    var $intro = $(".intro");
+    var $logo = $("#logo");
+    var $linkA = $('.intro .linkA');
+    var $linkB = $('.intro .linkB');
+    var $text = $('.intro .col');
+    var $img = $('.intro img');
+    var $heading = $('.intro h2');
 
     //establish 
     let backgroundColor;
@@ -156,15 +156,15 @@ console.log('document ready!');
     setIntroDipslay();
 
     $(window).bind("scroll", function() { 
-        // const $intro = $('.intro').offset().top -40;
-        const $about = $('.about').offset().top -40;
-        const $workshops = $('.workshops').offset().top - 40;
-        const $history = $('.history').offset().top - 40;
-        const $resources = $('.resources').offset().top - 40;
-        const $sponsors = $('.sponsors').offset().top - 40;
+        // var $intro = $('.intro').offset().top -40;
+        var $about = $('.about').offset().top -40;
+        var $workshops = $('.workshops').offset().top - 40;
+        var $history = $('.history').offset().top - 40;
+        var $resources = $('.resources').offset().top - 40;
+        var $sponsors = $('.sponsors').offset().top - 40;
 
-        const $logo = $('#logo');
-        const $navLinkA = $('header > .linkA');
+        var $logo = $('#logo');
+        var $navLinkA = $('header > .linkA');
 
         
     if ($(this).scrollTop() < $about){ 
