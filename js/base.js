@@ -19,22 +19,22 @@ $(document).ready(function () {
         url: 'https://www.eventbrite.com/e/niles-mi-local-investing-workshop-tickets-52872080817'
     }, {
         date: 'mar. 21, 2019',
-        venue: 'Location TBD',
+        venue: 'The Milan Senior and Community Activity Center',
         location: 'Milan, MI',
         url: 'https://www.eventbrite.com/e/milan-mi-local-investing-workshop-tickets-52872248318'
     }, {
         date: 'apr. 9, 2019',
-        venue: 'Location TBD',
+        venue: 'US 12 Bar and Grill',
         location: 'Wayne, MI',
         url: 'https://www.eventbrite.com/e/wayne-mi-local-investing-workshop-tickets-52872814010'
     }, {
         date: 'may. 7, 2019',
-        venue: 'Location TBD',
+        venue: 'Ramada Plaza',
         location: 'Sault Ste Marie, MI',
         url: 'https://www.eventbrite.com/e/sault-ste-marie-mi-local-investing-workshop-tickets-52873761845'
     }, {
         date: 'may. 9, 2019',
-        venue: 'Library: Community Room',
+        venue: 'Charlevoix Library',
         location: 'Charlevoix, MI',
         url: 'https://www.eventbrite.com/e/charlevoix-mi-local-investing-workshop-tickets-52873301468'
     }];
@@ -122,7 +122,7 @@ $(document).ready(function () {
     //generate events table
     $(function () {
         for (var i = 0; i < events.length; i++) {
-            var eventRow = '\n            <div class="eventRow"> \n                <div class="col-sm-12 col-md-6">\n                    <div class="row dateVenueWrapper">\n                        <p class="date">' + events[i].date + '</p>\n                        <p class="venue">' + events[i].venue + '</p>\n                    </div>\n                </div>\n                <div class="col-sm-12 col-md-6">\n                    <div class="row locationLinksWrapper">\n                        <p class="location">' + events[i].location + '</p>\n                        <a href=' + events[i].url + ' target="_blank" class="linkA eventLink">Register Now</a>\n                    </div>\n                </div>\n            </div';
+            var eventRow = '\n            <div class="eventRow"> \n                <div class="col-sm-12 col-md-7">\n                    <div class="row dateVenueWrapper">\n                        <p class="date">' + events[i].date + '</p>\n                        <p class="venue">' + events[i].venue + '</p>\n                    </div>\n                </div>\n                <div class="col-sm-12 col-md-5">\n                    <div class="row locationLinksWrapper">\n                        <p class="location">' + events[i].location + '</p>\n                        <a href=' + events[i].url + ' target="_blank" class="linkA eventLink">Register Now</a>\n                    </div>\n                </div>\n            </div';
 
             $(".workshopEvents").append(eventRow);
         }
