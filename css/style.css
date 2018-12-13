@@ -115,10 +115,17 @@ header .linkA span:nth-child(2){
     letter-spacing: 3px;
 }
 
-.linkA, .linkB {
+.linkA, .linkB, .iraList a {
     color: white;
     position: relative;
     border-bottom: 0px solid white;
+}
+
+.iraList a {
+    color: #4cbc8c;
+    display: inline-block;
+    width: max-content;
+    margin: 0 auto;
 }
 
 .linkA:after, .linkB:after, .history .sectionContent a:after {
@@ -138,24 +145,21 @@ header .linkA span:nth-child(2){
 }
    
 
-section {
+body > section {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     padding: 12.5rem 0;
 }
-
-
-
 
 h2 {
     font-family: 'bebas-neue-v14-deprecated',sans-serif;
@@ -228,7 +232,7 @@ h5 {
         align-self: center;
 }
 
-section:not(:first-of-type) > p:first-of-type {
+section:not(:first-of-type) > p:first-of-type, .iraList p {
     max-width: 55rem;
     font-size: 1.5rem;
     line-height: 2.3rem;
@@ -569,6 +573,12 @@ section:not(:first-of-type) {
     max-height: 9.6rem;
     -webkit-transition: .2s all ease-out;
     transition: .2s all ease-out;
+}
+
+/* ira list sub section */
+
+.iraList {
+    margin-top: 10rem;
 }
 
 /* footer */
