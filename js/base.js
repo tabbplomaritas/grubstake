@@ -154,23 +154,23 @@ $( document ).ready(() => {
         let $navLinkA = $('header > .linkA');
         
         if ($(this).scrollTop() < $about){ 
-                $logo.css("color", `${logoColor}`);
-                $navLinkA.css({"color": `${color1}`, "border-bottom": `0px solid ${color1}`});
-            } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
-                $logo.css("color", "#ed9a99")
-                $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
-            } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $history){
-                $logo.css("color", "#21704f")
-                $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
-            }else if ($(this).scrollTop() > $history && $(this).scrollTop() < $resources){
-                $logo.css("color", "#4cbc8c")
-                $navLinkA.css({"color": "#bd3f40", "border-bottom": "0 solid #bd3f40"});
-            }else if ($(this).scrollTop() > $resources && $(this).scrollTop() < $sponsors){
-                $logo.css("color", "#bd3f40")
-                $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
-            } else if ($(this).scrollTop() > $sponsors){
-                $logo.css("color", "#a5a4a4")
-                $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
-            }
-        });
+            $logo.css("color", `${logoColor}`);
+            $navLinkA.css({"color": `${color1}`, "border-bottom": `0px solid ${color1}`});
+        } else if ($(this).scrollTop() > $about && $(this).scrollTop() < $workshops){ 
+            $logo.css("color", "#ed9a99")
+            $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
+        } else if ($(this).scrollTop() > $workshops && $(this).scrollTop() < $history){
+            $logo.css("color", "#21704f")
+            $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
+        }else if ($(this).scrollTop() > $history && $(this).scrollTop() < $resources){
+            $logo.css("color", "#4cbc8c")
+            $navLinkA.css({"color": "#bd3f40", "border-bottom": "0 solid #bd3f40"});
+        }else if ($(this).scrollTop() > $resources && $(this).scrollTop() < $sponsors){
+            $logo.css("color", "#bd3f40")
+            $navLinkA.css({"color": "white", "border-bottom": "0 solid white"});
+        } else if ($(this).scrollTop() > $sponsors){
+            $logo.css("color", "#a5a4a4")
+            $navLinkA.css({"color": "#4cbc8c", "border-bottom": "0 solid #4cbc8c"});
+        }
+    });
 });
