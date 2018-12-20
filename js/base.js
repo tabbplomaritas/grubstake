@@ -1,8 +1,8 @@
 "use strict";
 
-$(document).ready(function () {
+$(document).ready(() => {
 
-    var events = [{
+    let events = [{
         date: 'dec. 15, 2018',
         venue: 'New Life Church',
         location: 'wayland, MI',
@@ -40,22 +40,21 @@ $(document).ready(function () {
     }];
 
     //randomly choose which landing page screen user will see
-    var randomNum = Math.floor(Math.random() * 5) + 1;
+    let randomNum = Math.floor(Math.random() * 5) + 1;
 
     //declare elements to be chagned
-    var $intro = $(".intro");
-    var $logo = $("#logo");
-    var $linkA = $('.intro .linkA');
-    var $linkB = $('.intro .linkB');
-    var $text = $('.intro .col');
-    var $img = $('.intro img');
-    var $heading = $('.intro h2');
+    let $intro = $(".intro");
+    let $logo = $("#logo");
+    let $linkA = $('.intro .linkA');
+    let $linkB = $('.intro .linkB');
+    let $text = $('.intro .col');
+    let $img = $('.intro img');
+    let $heading = $('.intro h2');
 
     //establish 
     var backgroundColor;
     var logoColor;
     var color1;
-    var color2;
     var textColor;
     var imageSrc;
     var headingText;

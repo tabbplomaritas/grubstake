@@ -1,0 +1,31 @@
+{
+  "name": "grubstake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tabbplomaritas/grubstake.git"
+  },
+  "author": "Tabbatha Plomaritas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tabbplomaritas/grubstake/issues"
+  },
+  "homepage": "https://github.com/tabbplomaritas/grubstake#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "babel-cli": "^6.26.0"
+  }
+}
