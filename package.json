@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "npx babel ./js/base.js --out-file ./js/script.js"
   },
   "babel": {
     "presets": [
@@ -25,7 +25,6 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "babel-cli": "^6.26.0"
+    "@babel/preset-env": "^7.2.3"
   }
 }
