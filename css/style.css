@@ -53,7 +53,7 @@ p {
 
 a {
     font-size: 2rem;
-    font-family: 'bebas-neue-by-fontfabric',sans-serif;
+    font-family: 'bebas-neue',sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
     color: white;
@@ -162,7 +162,7 @@ body > section {
 }
 
 h2 {
-    font-family: 'bebas-neue-v14-deprecated',sans-serif;
+    font-family: 'bebas-neue',sans-serif;
     font-size: 8rem;
     letter-spacing: 3px;
     position: relative;
@@ -443,14 +443,14 @@ section:not(:first-of-type) {
 }
 
 .eventRow a {
-    font-family: 'bebas-neue-v14-deprecated',sans-serif;
+    font-family: 'bebas-neue',sans-serif;
     color: #A44142;
     border-bottom: 0px solid #A44142;
     text-transform: uppercase;
 }
 
 .eventRow .locationLinksWrapper button {
-    font-family: 'bebas-neue-v14-deprecated',sans-serif;
+    font-family: 'bebas-neue',sans-serif;
     color: #a5a4a4;
     text-transform: uppercase;
     font-size: 2rem;
