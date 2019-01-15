@@ -524,6 +524,10 @@ section:not(:first-of-type) {
     width: 100%;
 }
 
+.resourcesLinks a:nth-of-type(2) {
+    color: #21704f;
+}
+
 .resources .col {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -715,6 +719,11 @@ footer i {
 
 /* tablet */
 @media (max-width: 992px) { 
+
+    .resources a {
+        font-size: 1.7rem;
+        letter-spacing: 1.6px;
+    }
 
     /* about section queries */
     .about_col h3 {
