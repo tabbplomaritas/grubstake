@@ -514,16 +514,31 @@ section:not(:first-of-type) {
     background-color: #fece8a;
 }
 
+.resources .sectionContent {
+    margin-top: 0;
+}
+
+.resourcesLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .resources .col {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 2rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+
 }
 
 .resources .col p {
     line-height: 2.3rem;
     max-width: 35rem;
+    text-align: center;
 }
 
 .resources h3 {
