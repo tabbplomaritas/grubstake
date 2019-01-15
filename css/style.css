@@ -798,6 +798,14 @@ footer i {
 
 @media (max-width: 767px) { 
 
+    .resourcesLinks {
+        justify-content: center;
+    }
+
+    .resourcesLinks a:first-of-type {
+        margin-right: 3rem;
+    }
+
     .intro {
         text-align: center;
     }
