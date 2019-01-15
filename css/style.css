@@ -524,9 +524,9 @@ section:not(:first-of-type) {
     width: 100%;
 }
 
-.resourcesLinks a:nth-of-type(2) {
+/* .resourcesLinks a:nth-of-type(2) {
     color: #21704f;
-}
+} */
 
 .resources .col {
     -webkit-box-align: center;
